@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Links */}
+        {/* Social Media Links */}
         <div>
           <h4 className="text-lg font-medium mb-3">Quick Links</h4>
           <ul className="space-y-2">
@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* Contact section */}
         <div>
           <h4 className="text-lg font-medium mb-3">Contact Us</h4>
           <p className="text-sm">Addis Ababa, Ethiopia</p>
