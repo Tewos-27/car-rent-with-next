@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+// This is the root layout for the application, which includes global styles, fonts, and components like Navbar and Footer.
 
 export const metadata: Metadata = {
   title: "Ethio Car Rental",
