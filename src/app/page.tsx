@@ -1,103 +1,91 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="px-6 py-12 max-w-7xl mx-auto space-y-24">
+      {/* Hero Section */}
+      <section className="text-center">
+        <h1 className="text-5xl font-bold mb-4">Welcome to Ethio Car Rental</h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Find the perfect car for your journey — affordable, reliable, and available across Ethiopia.
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Features Section */}
+      <section className="grid md:grid-cols-3 gap-8">
+        <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 className="text-xl font-semibold mb-2">Wide Car Selection</h3>
+          <p>
+            From compact cars to luxury SUVs, we offer a range of vehicles to meet your travel needs.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 className="text-xl font-semibold mb-2">Flexible Rental Plans</h3>
+          <p>
+            Rent by the day, week, or month — our plans are built to give you flexibility and value.
+          </p>
+        </div>
+        <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 className="text-xl font-semibold mb-2">Trusted Local Partners</h3>
+          <p>
+            We collaborate with verified car rental companies to ensure safety, service, and reliability.
+          </p>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="text-center">
+        <h2 className="text-3xl font-bold mb-6">How It Works</h2>
+        <div className="grid md:grid-cols-4 gap-6 text-left">
+          <div>
+            <h4 className="font-bold mb-2">1. Search</h4>
+            <p>Browse available cars in your city with real-time pricing and availability.</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2">2. Book</h4>
+            <p>Choose your preferred vehicle and book online in just a few clicks.</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2">3. Pick Up</h4>
+            <p>Pick up your rental from the selected location or arrange delivery.</p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-2">4. Drive</h4>
+            <p>Enjoy your trip with full support from our partner network.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section>
+        <h2 className="text-3xl font-bold mb-6 text-center">What Our Customers Say</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <blockquote className="bg-white shadow-md p-6 rounded">
+            <p className="text-lg italic">
+              "Ethio Car Rental made my business trip smooth and stress-free. Highly recommend!"
+            </p>
+            <footer className="mt-4 text-right">— Meron T.</footer>
+          </blockquote>
+          <blockquote className="bg-white shadow-md p-6 rounded">
+            <p className="text-lg italic">
+              "Great selection of cars and very professional customer service. Will use again."
+            </p>
+            <footer className="mt-4 text-right">— Dawit A.</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="text-center">
+        <h2 className="text-3xl font-bold mb-4">Ready to Rent?</h2>
+        <p className="mb-6 text-lg text-gray-600">
+          Start your booking today and explore Ethiopia with ease and confidence.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/cars"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Browse Cars
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+    </main>
   );
 }
