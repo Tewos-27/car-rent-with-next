@@ -1,3 +1,4 @@
+'use client';
 export default function Home() {
   return (
     <main className="px-6 py-12 max-w-7xl mx-auto space-y-24">
